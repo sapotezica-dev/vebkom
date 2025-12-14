@@ -8,6 +8,13 @@
   i veb sajt koristeći HTML i CSS. Osnove veb tehnologija i web komunikacije 
   na jednom mestu.">
   <meta name="keywords" content="html css, web sajt, veb sajt, šta je web">
+<meta property="og:title" content="HTML CSS – Web sajt i veb sajt: Šta je web">
+<meta property="og:description" content="Saznaj šta je web i kako se pravi web sajt i veb sajt koristeći HTML i CSS.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://majestic-torte-e71167.netlify.app/">
+<meta property="og:image" content="https://majestic-torte-e71167.netlify.app/slika-preview.jpg">
+<meta property="og:site_name" content="Veb komunikacija">
+
   <style>
     * {
       box-sizing: border-box;
@@ -90,20 +97,25 @@
       display: none;
     }
     @media (max-width: 768px) {
+
   nav {
     flex-direction: column;
     align-items: center;
   }
+
   nav a {
     padding: 8px 0;
   }
+
   main {
     margin: 15px;
     padding: 15px;
   }
+
   h1 {
     font-size: 1.6rem;
   }
+
   h2 {
     font-size: 1.3rem;
   }
@@ -154,6 +166,30 @@
       <button onclick="posaljiPoruku()">Pošalji poruku</button>
       <p id="poruka" class="hidden"></p>
     </section>
+
+    <section id="drustvene-mreze">
+  <h2>Deljenje sadržaja na društvenim mrežama</h2>
+  <p>Podeli ovaj web sajt ili veb sajt na društvenim mrežama:</p>
+
+  <a
+    href="https://www.facebook.com/sharer/sharer.php?u=https://majestic-torte-e71167.netlify.app/"
+    target="_blank"
+    rel="noopener"
+  >
+    👍 Podeli na Facebook-u
+  </a>
+
+  <br><br>
+
+  <a
+    href="https://twitter.com/intent/tweet?text=Pogledajte ovaj web sajt o veb komunikaciji!&url=https://majestic-torte-e71167.netlify.app/"
+    target="_blank"
+    rel="noopener"
+  >
+    🔁 Podeli na Twitter-u
+  </a>
+</section>
+
   </main>
 
   <footer>
@@ -170,4 +206,3 @@
 
 </body>
 </html>
-

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veb komunikacija</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background: #111827;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background: #1e3a8a;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #2745b5;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111827;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Veb komunikacija</h1>
+    <p>Osnove komunikacije na internetu</p>
+  </header>
+
+  <nav>
+    <a href="#uvod">Uvod</a>
+    <a href="#tehnologije">Tehnologije</a>
+    <a href="#primer">Primer</a>
+  </nav>
+
+  <main>
+    <section id="uvod">
+      <h2>Šta je veb komunikacija?</h2>
+      <p>
+        Veb komunikacija predstavlja razmenu podataka između klijenta (najčešće web pregledača)
+        i servera putem interneta. Najčešće se ostvaruje pomoću HTTP ili HTTPS protokola.
+      </p>
+    </section>
+
+    <section id="tehnologije">
+      <h2>Osnovne tehnologije</h2>
+      <ul>
+        <li><strong>HTML</strong> – struktura stranice</li>
+        <li><strong>CSS</strong> – stil i izgled</li>
+        <li><strong>JavaScript</strong> – interakcija i dinamika</li>
+        <li><strong>HTTP/HTTPS</strong> – protokoli za komunikaciju</li>
+      </ul>
+    </section>
+
+    <section id="primer">
+      <h2>Interaktivan primer</h2>
+      <p>Klikni na dugme da pošalješ poruku (simulacija klijent–server komunikacije):</p>
+      <br />
+      <button onclick="posaljiPoruku()">Pošalji poruku</button>
+      <p id="poruka" class="hidden"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 – Veb komunikacija | Demo sajt</p>
+  </footer>
+
+  <script>
+    function posaljiPoruku() {
+      const porukaEl = document.getElementById("poruka");
+      porukaEl.textContent = "Poruka je poslata serveru i odgovor je uspešno primljen!";
+      porukaEl.classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
